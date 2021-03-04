@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.container{
+    background-color: #dfe6e9;
+    margin: auto;
+    display: flex;
+    height: auto;
+    width: 80vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+.boxes{
+    flex: 1 1 200px;
+    padding: 25px;
+    margin: 10px;
+}
+
+
+
+.boxes:nth-child(1){
+    background-color: greenyellow;
+}
+
+.boxes:nth-child(2){
+    background-color: lightblue;
+}
+
+.boxes:last-child{
+    background-color: lavender;
+}
+
+@media (max-width:768px){
+    .container{
+        height: auto;
+    }
+}
